@@ -7,7 +7,7 @@ Clean architecture promotes separation of concerns, making the code loosely coup
 
 
 <p align="center">
-        <img src="https://github.com/balwinderSingh1989/MVVMCleanAndroid/blob/master/images/clean.png" width="600" height="500"/>
+        <img src="https://github.com/balwinderSingh1989/MVVMCleanAndroid/blob/master/images/clean.png" width="600" height="700"/>
        
 </p>
 
