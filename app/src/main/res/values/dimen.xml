@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ll_login_top_down_padding">10dp</dimen>
+
+    <!--Size/Spacing tokens-->
+    <dimen name="spacingXxxLarge">40dp</dimen>
+    <dimen name="spacingXxLarge">32dp</dimen>
+    <dimen name="spacingXLarge">24dp</dimen>
+    <dimen name="spacingLarge">20dp</dimen>
+    <dimen name="spacingMedium">16dp</dimen>
+    <dimen name="spacingSmall">12dp</dimen>
+    <dimen name="spacingXSmall">8dp</dimen>
+    <dimen name="spacingXxSmall">4dp</dimen>
+    <dimen name="spacingXxxSmall">2dp</dimen>
+
+</resources>

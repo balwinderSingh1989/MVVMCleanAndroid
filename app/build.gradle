@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
+
+android {
+    compileSdkVersion app.compileSdk
+    buildToolsVersion = app.buildTools
+
+    defaultConfig {
+
+        minSdkVersion app.minSdk
+        targetSdkVersion app.targetSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility java.sourceCompatibility
+        targetCompatibility java.targetCompatibility
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    flavorDimensions 'app', 'environment'
+
+    productFlavors {
+        sample {
+
+            dimension 'app'
+            applicationId packageId.sampleapp
+            ext {
+                live = endpoints.sampleLive
+                mock = endpoints.sampleMock
+
+            }
+        }
+
+        live {
+            dimension 'environment'
+            applicationIdSuffix ".live"
+        }
+
+        mock {
+            dimension 'environment'
+            applicationIdSuffix ".mock"
+        }
+
+
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def flavors = variant.productFlavors
+            def app = flavors[0]
+            def environment = flavors[1]
+            variant.buildConfigField "String", "END_POINT", "${app[environment.name]}"
+            variant.resValue "string", "app_name", "SampleTestApp"
+            outputFileName = "${app.name.toUpperCase()} Sample-${environment.name.toUpperCase()}-${variant.versionName}.apk"
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    addDependencies(dependencies, appDependencies)
+    implementation project(':core')
+}
