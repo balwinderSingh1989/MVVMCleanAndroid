@@ -1,4 +1,4 @@
-## Kotlin + MVVM + Clean Architecture + Coroutines + Koin
+## Kotlin + MVVM + Clean Architecture + Coroutines + Dagger
 
 This project was made with the objective of creating a base structure for new apps, using tools and components supported by Google and by most of the Android development community.
 
