@@ -5,18 +5,22 @@ This project was made with the objective of creating a base structure for new ap
 ## Clean Architecture
 Clean architecture promotes separation of concerns, making the code loosely coupled. This results in a more testable and flexible code. This approach divides the project in 3 modules: presentation, data and domain.
 
-## Presentation: Layer with the Android Framework, the MVVM pattern and the DI module. Depends on domain to access the use cases and on di, to inject dependencies.
+## Presentation: 
+Layer with the Android Framework, the MVVM pattern and the DI module. Depends on domain to access the use cases and on di, to inject dependencies.
 
-## Domain: Layer with the business logic. Contains the use cases, in charge of calling the correct repository or data member.
+## Domain: 
+Layer with the business logic. Contains the use cases, in charge of calling the correct repository or data member.
 
 
-## Data: Layer with the responsibility of selecting the proper data source for the domain layer. It contains the implementations of the repositories declared in the domain layer. It may, for example, check if the data in a database is up to date, and retrieve it from a service if it’s not.
+## Data: 
+Layer with the responsibility of selecting the proper data source for the domain layer. It contains the implementations of the repositories declared in the domain layer. It may, for example, check if the data in a database is up to date, and retrieve it from a service if it’s not.
 As there isn’t a single way to implement Clean Architecture, this could affront changes in the future.
 
 ## Domain
 Business logic can be defined as the core operations done by the application. The domain tries to encapsulate this business logic, to make it agnostic of its context. The components of the domain are:
 
-## Entities: Simple classes that represent the objects in which the business is based.
+## Entities: 
+# Simple classes that represent the objects in which the business is based.
 Repositories: Interfaces used by the use cases. Implemented in the data layer.
 Use cases: Also called interactors. They enclose a single action, like getting data from a database or posting to a service. They use the repositories to resolve the action they are supposed to do. They usually override the operator “invoke”, so they can be called as a function.
 
