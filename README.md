@@ -101,7 +101,7 @@ androidx.* -> extension library.
 
 
 <p align="center">
-        <img src="https://github.com/balwinderSingh1989/MVVMCleanAndroid/blob/master/images/projectStructure.png" width="600" height="500"/>
+        <img src="https://github.com/balwinderSingh1989/MVVMCleanAndroid/blob/master/images/projectStructure.png" width="600" height="1000"/>
        
 </p>
 
