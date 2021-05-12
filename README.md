@@ -77,7 +77,8 @@ is closely related to two SOLID concepts: dependency inversion, which states tha
 ## Coroutines
 Coroutines are a new way of managing background threads that can simplify code by reducing the need for callbacks. They convert async callbacks for long-running tasks, such as database or network access, into sequential code. We use coroutines to do tasks in a background thread. This goes very well with the idea of use cases, single actions that the ViewModel calls depending of its needs. The guideline should be that every task executed by a use case should be done in a background thread, so, in the main thread, we could show a loading screen or any alternative, and the UI doesn’t get blocked.
 
-## Job: a job is a cancellable task with a life-cycle that culminates in its completion. By default, a failure of any of the job’s children leads to an immediate failure of its parent and cancellation of the rest of its children. This behavior can be customized using SupervisorJob.
+## Job: 
+a job is a cancellable task with a life-cycle that culminates in its completion. By default, a failure of any of the job’s children leads to an immediate failure of its parent and cancellation of the rest of its children. This behavior can be customized using SupervisorJob.
 
 ## Dispatchers:
 
@@ -86,10 +87,11 @@ Coroutines are a new way of managing background threads that can simplify code b
 
 
 ## Other concepts
-AndroidX
-AndroidX is a redesigned library, replacing the support library, to make package names more clear. Each androidx package has it own version, detached from the Android API version, so extension libraries can be developed independently.
+- AndroidX
+   <p> AndroidX is a redesigned library, replacing the support library, to make package names more clear. Each androidx package has it own version, detached from          the Android API version, so extension libraries can be developed independently.
+        </p>
 
-Androidx also improves understanding of what is added to the app:
+- Androidx also improves understanding of what is added to the app:
 
 android.* -> bundled in the platform.
 androidx.* -> extension library.
