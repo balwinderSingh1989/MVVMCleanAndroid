@@ -5,6 +5,13 @@ This project was made with the objective of creating a base structure for new ap
 ## Clean Architecture
 Clean architecture promotes separation of concerns, making the code loosely coupled. This results in a more testable and flexible code. This approach divides the project in 3 modules: presentation, data and domain.
 
+
+<p align="center">
+        <img src="https://github.com/balwinderSingh1989/MVVMCleanAndroid/blob/master/images/clean.png" width="600" height="500"/>
+       
+</p>
+
+
 ## Presentation: 
 Layer with the Android Framework, the MVVM pattern and the DI module. Depends on domain to access the use cases and on di, to inject dependencies.
 
