@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="login">Login</string>
+
+    <string name="login_username">Username</string>
+    <string name="login_user_icon">User Icon</string>
+    <string name="login_hi">Hi ,&#160;</string>
+    <string name="login_loader_message">Request being processed&#8230;</string>
+
+    <string name="login_password">Password</string>
+    <string name="login_password_icon">Password Icon</string>
+
+    <string name="login_different_user">Not you? Sign in with different userId</string>
+    <string name="login_logout_successful">Logout successful</string>
+
+    <string name="login_error_username_empty">Username can not be blank</string>
+    <string name="login_error_password_empty">Password can not be blank</string>
+
+
+    <string name="login_error_username_password_not_valid">
+        Username or Password is not valid.</string>
+    <string name="login_error_user_not_found">Sorry, we coundn\'t find this userId.</string>
+
+    <string name="login_error_unauthorized_request">Unauthorized request</string>
+
+    <!--  Main Page  -->
+    <string name="main_logout">Logout</string>
+
+
+    <!-- Errors -->
+    <string name="error_session_title">Session timeout.</string>
+    <string name="error_session_timeout_message">Session timeout. Please login again.</string>
+    <string name="an_error_occurred">An error occured</string>
+
+
+    <!--Dialog Utils String-->
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="error">Error</string>
+
+    <!-- Permission -->
+    <string name="permission_general">You Need To Go To Settings To Enable The Permission Access First</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="logout_positive">Yes! Log me out</string>
+
+
+
+
+
+
+</resources>
