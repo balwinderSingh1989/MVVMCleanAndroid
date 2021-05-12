@@ -95,3 +95,13 @@ a job is a cancellable task with a life-cycle that culminates in its completion.
 
 android.* -> bundled in the platform.
 androidx.* -> extension library.
+
+
+## Project Structure 
+
+
+<p align="center">
+        <img src="https://github.com/balwinderSingh1989/MVVMCleanAndroid/blob/master/images/projectStructure.png" width="600" height="500"/>
+       
+</p>
+
